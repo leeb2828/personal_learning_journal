@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entire Database</title>
+</head>
+<body>
+    <h1>Entire database page</h1>
+      <table border = 1>
+         <thead>
+            <td><b>ID</b></td>
+            <td><b>Title</b></td>
+            <td><b>Date</b></td>
+            <td><b>Time Spent</b></td>
+            <td><b>What I Learned</b></td>
+            <td><b>Resources to Remember</b></td>
+            <td><b>Formatted Date</b></td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["title"]}}</td>
+               <td>{{row["date"]}}</td>
+               <td> {{row["timespent"]}}</td>
+               <td>{{row["learned"]}}</td>	
+               <td>{{row["resources"]}}</td>
+               <td>{{row["formattedDate"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+</body>
+</html>
