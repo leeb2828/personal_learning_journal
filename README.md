@@ -14,6 +14,8 @@ Able to add, remove, or modify journal entries.
 ![Home Page](images/home.png)
 
 <br />
+Click on the title of any journal entry to read the entire post.
+<br />
 
 ![Submitted Page](images/in_detail.png)
 
